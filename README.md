@@ -17,7 +17,7 @@ https://www.digitalunite.com/practice-webform-learners
 - Run the project using intellij
 
 ## Framework Used:
-- JUnit
+- JUnit.
 
 ## Report Images:
 
