@@ -15,8 +15,8 @@ import java.util.List;
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 
 
-public class Junit_Assignment {
-    WebDriver driver;
+public class Junit_Assignment  {
+     static WebDriver driver;
 
     @BeforeAll
     public void setup() {
@@ -55,7 +55,7 @@ public class Junit_Assignment {
         infos.get(4).sendKeys(("Nothing to say"));
         driver.findElement(By.id("edit-uploadocument-upload")).sendKeys(System.getProperty("user.dir")+"/src/test/resources/Batman.jpg");
        // Thread.sleep(3000);
-        scroll(0,1000);
+        Utils.scroll(0,1000);
         Thread.sleep(3000);
         driver.findElement(By.id("edit-age")).click();
         driver.findElement(By.id("edit-submit")).click();
@@ -97,11 +97,7 @@ public class Junit_Assignment {
 
 
 
-    public void scroll(int x, int y) {                                           // Scroll er code
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollTo("+x+","+y+")");
 
-    }
 
 
 }
